@@ -1,30 +1,28 @@
 Cm004
 ================
 
-R Markdown
-----------
+This is level 1 header
+======================
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is a level 2 header
+------------------------
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+This is a line text.
+
+-   bullet 1
+-   bullet 2
 
 ``` r
-summary(cars)
+x <- rnorm(100)
+y <- rnorm(100)
+plot(x,y)
 ```
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+![](Cm004demo_files/figure-markdown_github-ascii_identifiers/this%20is%20the%20first%20chunk-1.png)
 
-Including Plots
----------------
+``` r
+summary(x)
+```
 
-You can also embed plots, for example:
-
-![](Cm004demo_files/figure-markdown_github-ascii_identifiers/pressure-1.png)
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+    ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    ## -2.1161 -0.7754 -0.1330 -0.1151  0.6060  2.6833
